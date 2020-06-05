@@ -49,7 +49,7 @@ class GeneratorFixtures {
     }
     set locality(locality) {
 
-        this._locality = ( typeof locality === "string" ) ? locality: DEFAULT_LOCALITY;
+        this._locality = ( typeof locality === "string" ) ? locality: GeneratorFixtures.DEFAULT_LOCALITY;
 
         if( !GeneratorFixtures.LOCALITIES_LIST.includes(this._locality) ) {
 
@@ -167,41 +167,3 @@ class GeneratorFixtures {
 
 
 module.exports = GeneratorFixtures;
-
-
-/*
-createFaker( locality ) {
-
-    const faker = new GeneratorFixtures({
-        locakity,
-        isAppendOneTime: false,
-        onAppend: ( {
-            options,
-            state
-        } ) => {
-
-            this.addDoc( options.collectionName, state, options.AUTO_SAVE_ID );
-        }
-    });
-
-    return faker;
-}
-
-
-const faker = fullyStorage.createFaker("en_US");
-
-faker.options = {
-    collectionName: "articles",
-    AUTO_SAVE_ID: fullyStorage.AUTO_SAVE_ID
-};
-
-
-
-faker.forEach( 10, generator => {
-
-    const article = {};
-    article.title = generator.lorem.words
-    return articles;
-} );
-
-*/
