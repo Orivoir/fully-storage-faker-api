@@ -1,0 +1,28 @@
+{
+  "name": "fully-storage-faker-api",
+  "version": "1.0.0",
+  "description": "API generator fixtures implement of fully-storage package",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test"
+  },
+  "keywords": [
+    "fully-storage",
+    "api",
+    "implement",
+    "apis",
+    "faker",
+    "fixtures",
+    "factory"
+  ],
+  "author": "S.GABORIEAU <sam.gabor@hotmail.com> (https://github.com/Orivoir)",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0",
+    "nyc": "^15.1.0"
+  }
+}
