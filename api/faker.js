@@ -40,8 +40,6 @@ class GeneratorFixtures {
          * arbitrary value, not setter
          */
         this.options = options;
-
-        faker.locale = locality;
     }
 
     get locality() {
@@ -55,6 +53,8 @@ class GeneratorFixtures {
 
             this._locality = GeneratorFixtures.DEFAULT_LOCALITY;
         }
+
+        faker.locale = locality;
     }
 
     get onAppend() {
