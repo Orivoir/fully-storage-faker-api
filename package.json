@@ -1,6 +1,6 @@
 {
   "name": "fully-storage-faker-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "API generator fixtures implement of fully-storage package",
   "main": "index.js",
   "scripts": {
